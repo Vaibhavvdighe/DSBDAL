@@ -1,5 +1,13 @@
 a="I will walk 500 miles everyday and wlak 500 miles more than previous miles."
 
+!pip install -q wordcloud
+import wordcloud
+import nltk
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+
 # tokenization
 from nltk import word_tokenize,sent_tokenize
 print("Tokenized words:",word_tokenize(a))
