@@ -56,6 +56,8 @@ df.isnull().sum()
 #Column wise data types
 df.dtypes
 
+#Changing The datatypes
+df['SepalLengthCm'].astype(int)
 
 #Converting categorical variables into quantitative variables
 df['species'].replace({'setosa':1,'versicolor':2,'virginica':3},inplace=True)
